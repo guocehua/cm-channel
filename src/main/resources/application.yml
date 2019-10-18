@@ -1,0 +1,10 @@
+# fastDFS ≈‰÷√
+fdfs:
+  connect-timeout: 600
+  so-timeout: 1500
+  thumb-image:
+    width: 150
+    height: 150
+  web-server-url: 'http://10.0.1.34/'
+  tracker-list:
+    - 10.0.1.34:22122
