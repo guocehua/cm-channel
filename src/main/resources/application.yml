@@ -11,3 +11,11 @@ fdfs:
 mybatis:
   basePackage: com.jianyuan.cmchannel.mapper
   xmlLocation: classpath:mapper/**/*.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: cmc_dev
+    password: W5sJYx%8^xd
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://10.0.3.5:3306/cm_channel?useCompression=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
