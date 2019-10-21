@@ -16,6 +16,7 @@ repositories {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.10'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.0'
     implementation 'com.github.tobato:fastdfs-client:1.26.5'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {

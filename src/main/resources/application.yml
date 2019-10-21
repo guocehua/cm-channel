@@ -1,4 +1,4 @@
-# fastDFS ÅäÖÃ
+# fastDFS ï¿½ï¿½ï¿½ï¿½
 fdfs:
   connect-timeout: 600
   so-timeout: 1500
@@ -8,3 +8,6 @@ fdfs:
   web-server-url: 'http://10.0.1.34/'
   tracker-list:
     - 10.0.1.34:22122
+mybatis:
+  basePackage: com.jianyuan.cmchannel.mapper
+  xmlLocation: classpath:mapper/**/*.xml
