@@ -1,595 +1,598 @@
 package com.jianyuan.cmchannel.domain;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class TSysSuppliers {
+public class TSysSuppliers implements Serializable {
     /**
-    * 代理商id
-    */
+     * 代理商id
+     */
     private String supId;
 
     /**
-    * 代理商标识
-    */
+     * 代理商标识
+     */
     private String supFlag;
 
     /**
-    * 财务接口专用供应商编号对应原系统prov_id
-    */
+     * 财务接口专用供应商编号对应原系统prov_id
+     */
     private String supCode;
 
     /**
-    * 代理商名称
-    */
+     * 代理商名称
+     */
     private String supName;
 
     /**
-    * 代理商简称
-    */
+     * 代理商简称
+     */
     private String supShortname;
 
     /**
-    * 厂商id,改为多对多，新加中间表t_sys_supp_company
-    */
+     * 厂商id,改为多对多，新加中间表t_sys_supp_company
+     */
     private BigDecimal companyId;
 
     /**
-    * 营业执照注册号
-    */
+     * 营业执照注册号
+     */
     private String corpBusinessLicense;
 
     /**
-    * 代理商地址
-    */
+     * 代理商地址
+     */
     private String supAddress;
 
     /**
-    * 代理商传真
-    */
+     * 代理商传真
+     */
     private String supFax;
 
     /**
-    * 代理商邮编
-    */
+     * 代理商邮编
+     */
     private String supZip;
 
     /**
-    * 组织机构代码证号
-    */
+     * 组织机构代码证号
+     */
     private String oragnizationCode;
 
     /**
-    * 税务登记号
-    */
+     * 税务登记号
+     */
     private String taxCode;
 
     /**
-    * 成立日期
-    */
+     * 成立日期
+     */
     private Date setupDate;
 
     /**
-    * 到期日期
-    */
+     * 到期日期
+     */
     private Date periodValidity;
 
     /**
-    * 注册资本
-    */
+     * 注册资本
+     */
     private BigDecimal registeCapital;
 
     /**
-    * 实收资本
-    */
+     * 实收资本
+     */
     private BigDecimal paiclupCapital;
 
     /**
-    * 经营范围
-    */
+     * 经营范围
+     */
     private String businessRange;
 
     /**
-    * 代理商官网
-    */
+     * 代理商官网
+     */
     private String supWebsite;
 
     /**
-    * 代理商经理
-    */
+     * 代理商经理
+     */
     private String supManager;
 
     /**
-    * 所属行业
-    */
+     * 所属行业
+     */
     private String proIndustry;
 
     /**
-    * 是否回购
-    */
+     * 是否回购
+     */
     private BigDecimal isRepo;
 
     /**
-    * 区域id
-    */
+     * 区域id
+     */
     private String areaId;
 
     /**
-    * 省id
-    */
+     * 省id
+     */
     private String provId;
 
     /**
-    * 城市id
-    */
+     * 城市id
+     */
     private String cityId;
 
     /**
-    * 业务协议书签订日
-    */
+     * 业务协议书签订日
+     */
     private Date signDate;
 
     /**
-    * 代理商开户行
-    */
+     * 代理商开户行
+     */
     private String openBank;
 
     /**
-    * 开户账号
-    */
+     * 开户账号
+     */
     private String openBankNumber;
 
     /**
-    * 代理商法人名
-    */
+     * 代理商法人名
+     */
     private String supLegalName;
 
     /**
-    * 代理商法人电话
-    */
+     * 代理商法人电话
+     */
     private String supLegalPhone;
 
     /**
-    * 代理商法人手机号
-    */
+     * 代理商法人手机号
+     */
     private String supLegalMobil;
 
     /**
-    * 代理商法人常住地址
-    */
+     * 代理商法人常住地址
+     */
     private String subLegalAddress;
 
     /**
-    * 代理商法人email
-    */
+     * 代理商法人email
+     */
     private String subLegalEmail;
 
     /**
-    * 开票地址
-    */
+     * 开票地址
+     */
     private String billAddress;
 
     /**
-    * 开票电话
-    */
+     * 开票电话
+     */
     private String billPhone;
 
     /**
-    * 纳税资质（一般纳税人、小规模）
-    */
+     * 纳税资质（一般纳税人、小规模）
+     */
     private String taxQual;
 
     /**
-    * 纳税人识别号
-    */
+     * 纳税人识别号
+     */
     private String taxIdenNum;
 
     /**
-    * 邮递接收人
-    */
+     * 邮递接收人
+     */
     private String emsToName;
 
     /**
-    * 邮递接收地址
-    */
+     * 邮递接收地址
+     */
     private String emsToAddress;
 
     /**
-    * 邮递联系电话
-    */
+     * 邮递联系电话
+     */
     private String emsToPhone;
 
     /**
-    * 邮递邮编
-    */
+     * 邮递邮编
+     */
     private String emsToZip;
 
     /**
-    * 自有账户单位名
-    */
+     * 自有账户单位名
+     */
     private String loansOwnUnit;
 
     /**
-    * 自有账户地址
-    */
+     * 自有账户地址
+     */
     private String loansOwnAddr;
 
     /**
-    * 自有账户所在行
-    */
+     * 自有账户所在行
+     */
     private String loansOwnBank;
 
     /**
-    * 自有账户账号
-    */
+     * 自有账户账号
+     */
     private String loansOwnAccount;
 
     /**
-    * 共有账户单位名
-    */
+     * 共有账户单位名
+     */
     private String loansTotalUnit;
 
     /**
-    * 共有账户地址
-    */
+     * 共有账户地址
+     */
     private String loansTotalAdddr;
 
     /**
-    * 共有账户所在行
-    */
+     * 共有账户所在行
+     */
     private String loansTotalBank;
 
     /**
-    * 共有账户账号
-    */
+     * 共有账户账号
+     */
     private String loansTotalAccount;
 
     /**
-    * 代理商评分
-    */
+     * 代理商评分
+     */
     private BigDecimal subScore;
 
     /**
-    * 档案编号
-    */
+     * 档案编号
+     */
     private String fileNumber;
 
     /**
-    * 操作人id
-    */
+     * 操作人id
+     */
     private String userId;
 
     /**
-    * 创建时间
-    */
+     * 创建时间
+     */
     private Date createDate;
 
     /**
-    * 代理商等级
-    */
+     * 代理商等级
+     */
     private String supLevel;
 
     /**
-    * 代理商业务开关
-    */
+     * 代理商业务开关
+     */
     private String supSwitch;
 
     /**
-    * 代理商授信开关：是否进行额度流程管理（担保额度申请）
-    */
+     * 代理商授信开关：是否进行额度流程管理（担保额度申请）
+     */
     private String creditSwitch;
 
     /**
-    * 代理商放款开关
-    */
+     * 代理商放款开关
+     */
     private String paymentSwitch;
 
     /**
-    * 是否允许差额放款开关
-    */
+     * 是否允许差额放款开关
+     */
     private String balanceLoanSwitch;
 
     /**
-    * 是否开通季度内不规则还款开关
-    */
+     * 是否开通季度内不规则还款开关
+     */
     private String irregularRepaymentSwitch;
 
     /**
-    * 是否开通b模式开关
-    */
+     * 是否开通b模式开关
+     */
     private String bModelSwitch;
 
     /**
-    * 使用状态(辅导期、正式期)
-    */
+     * 使用状态(辅导期、正式期)
+     */
     private String status;
 
     /**
-    * 法人代表身份证号
-    */
+     * 法人代表身份证号
+     */
     private String supLegalIdcard;
 
     /**
-    * 对应组织架构id(org_id)
-    */
+     * 对应组织架构id(org_id)
+     */
     private BigDecimal orgBmid;
 
     /**
-    * 业务范围
-    */
+     * 业务范围
+     */
     private String scode;
 
     /**
-    * 开户行所在地
-    */
+     * 开户行所在地
+     */
     private String openBankAddr;
 
     /**
-    * t_sys_ems_info id
-    */
+     * t_sys_ems_info id
+     */
     private String emsId;
 
     /**
-    * 分期相关财务唯一标识对应原系统prov_instalment_id
-    */
+     * 分期相关财务唯一标识对应原系统prov_instalment_id
+     */
     private String provInstalmentId;
 
     /**
-    * 作废
-    */
+     * 作废
+     */
     private String financeSupId;
 
     /**
-    * 厂商放款全称
-    */
+     * 厂商放款全称
+     */
     private String loansCompanyUnit;
 
     /**
-    * 厂商放款地址
-    */
+     * 厂商放款地址
+     */
     private String loansCompanyAddr;
 
     /**
-    * 厂商放款银行
-    */
+     * 厂商放款银行
+     */
     private String loansCompanyBank;
 
     /**
-    * 厂商放款账号
-    */
+     * 厂商放款账号
+     */
     private String loansCompanyAccount;
 
     /**
-    * 短信业务是否开通开关
-    */
+     * 短信业务是否开通开关
+     */
     private String smsSwitch;
 
     /**
-    * 授信状态  0初始授信 1标准授信  -1未授信
-    */
+     * 授信状态  0初始授信 1标准授信  -1未授信
+     */
     private BigDecimal creditStatus;
 
     /**
-    * 是否开通扫描件开机动车票 1不开通 0开通
-    */
+     * 是否开通扫描件开机动车票 1不开通 0开通
+     */
     private String scanSwitch;
 
     /**
-    * 资料补齐开关（100%）0开通 1不开通
-    */
+     * 资料补齐开关（100%）0开通 1不开通
+     */
     private String datafillSwitch;
 
     /**
-    * 信用等级
-    */
+     * 信用等级
+     */
     private String creditGrade;
 
     /**
-    * 直租不上牌立项流程是否经过营业员审核步骤  0不经过 1经过
-    */
+     * 直租不上牌立项流程是否经过营业员审核步骤  0不经过 1经过
+     */
     private BigDecimal yingyeStatus;
 
     /**
-    * 代理商评分
-    */
+     * 代理商评分
+     */
     private BigDecimal score;
 
     /**
-    * 经销商类型：1：经销商，2：sp，3：经纪人，4：经销集团，5:指标公司，6：合作金融机构
-    */
+     * 经销商类型：1：经销商，2：sp，3：经纪人，4：经销集团，5:指标公司，6：合作金融机构
+     */
     private BigDecimal supType;
 
     /**
-    * 父id
-    */
+     * 父id
+     */
     private String parentId;
 
     /**
-    * 供应商放款方式，数据字典中配置1,票前放款2,上牌前放款3，抵押前放款4，抵押后放款，5：签约后放款
-    */
+     * 供应商放款方式，数据字典中配置1,票前放款2,上牌前放款3，抵押前放款4，抵押后放款，5：签约后放款
+     */
     private String lendingType;
 
     /**
-    * 返佣比率
-    */
+     * 返佣比率
+     */
     private BigDecimal commissionRatio;
 
     /**
-    * 返佣金额
-    */
+     * 返佣金额
+     */
     private BigDecimal commissionAmount;
 
     /**
-    * 常住地址（省）
-    */
+     * 常住地址（省）
+     */
     private String subLegalProv;
 
     /**
-    * 常住地址（市）
-    */
+     * 常住地址（市）
+     */
     private String subLegalCity;
 
     /**
-    * 常住地址（区）
-    */
+     * 常住地址（区）
+     */
     private String subLegalArea;
 
     /**
-    * 自有账户支付行号
-    */
+     * 自有账户支付行号
+     */
     private String loansOwnPay;
 
     /**
-    * 共管账户支付行号
-    */
+     * 共管账户支付行号
+     */
     private String loansTotalPay;
 
     /**
-    * 厂商账户支付行号
-    */
+     * 厂商账户支付行号
+     */
     private String loansCompanyPay;
 
     /**
-    * 区域经理
-    */
+     * 区域经理
+     */
     private String areaManager;
 
     /**
-    * 区域经理id
-    */
+     * 区域经理id
+     */
     private String areaManagerId;
 
     /**
-    * 所属公司
-    */
+     * 所属公司
+     */
     private BigDecimal owncompany;
 
     /**
-    * 区域经理id
-    */
+     * 区域经理id
+     */
     private BigDecimal suppAreaId;
 
     /**
-    * 区域经理名称
-    */
+     * 区域经理名称
+     */
     private String suppAreaJl;
 
     /**
-    * 是否分账（1：不分账  2：分账）sup_type=6时候使用
-    */
+     * 是否分账（1：不分账  2：分账）sup_type=6时候使用
+     */
     private BigDecimal isRouting;
 
     /**
-    * 商户代码，分账使用
-    */
+     * 商户代码，分账使用
+     */
     private String merchantId;
 
     /**
-    * gps供应商
-    */
+     * gps供应商
+     */
     private String gpsSupp;
 
     /**
-    * 1 是 2 否
-    */
+     * 1 是 2 否
+     */
     private String vip;
 
     /**
-    * 光大经销商编码
-    */
+     * 光大经销商编码
+     */
     private String gdSuppCode;
 
     /**
-    * 光大经销商
-    */
+     * 光大经销商
+     */
     private String gdSupp;
 
     /**
-    * 是否为有风险渠道 2正常1 关注  0  高风险
-    */
+     * 是否为有风险渠道 2正常1 关注  0  高风险
+     */
     private BigDecimal sfwyfxqd;
 
     /**
-    * 是否阶段性担保fbd公司或车商(数据字典取值：是否阶段性担保fbd公司或车商)
-    */
+     * 是否阶段性担保fbd公司或车商(数据字典取值：是否阶段性担保fbd公司或车商)
+     */
     private BigDecimal isStageDb;
 
     /**
-    * 合作保险公司（光大模式会使用）
-    */
+     * 合作保险公司（光大模式会使用）
+     */
     private BigDecimal insureId;
 
     /**
-    * 文件邮送警告天数（超过这个天数，开始提醒业务员邮送邮件）
-    */
+     * 文件邮送警告天数（超过这个天数，开始提醒业务员邮送邮件）
+     */
     private BigDecimal warnDay;
 
     /**
-    * 进单分流方式 1建元 0金融顾问，数据字典配置
-    */
+     * 进单分流方式 1建元 0金融顾问，数据字典配置
+     */
     private BigDecimal gotoType;
 
     /**
-    * 钉钉部门id
-    */
+     * 钉钉部门id
+     */
     private String ddId;
 
     /**
-    * 渠道类型，数据字典配置fbd、经销商
-    */
+     * 渠道类型，数据字典配置fbd、经销商
+     */
     private String supCate;
 
     /**
-    * 前端是否可修改放款银行信息
-    */
+     * 前端是否可修改放款银行信息
+     */
     private BigDecimal isLoansPay;
 
     /**
-    * 企业负责人
-    */
+     * 企业负责人
+     */
     private String companyLeader;
 
     /**
-    * 联系方式
-    */
+     * 联系方式
+     */
     private String contactWay;
 
     /**
-    * 邮箱
-    */
+     * 邮箱
+     */
     private String mail;
 
     /**
-    * 企业地址（省）
-    */
+     * 企业地址（省）
+     */
     private String companyProv;
 
     /**
-    * 企业地址（市）
-    */
+     * 企业地址（市）
+     */
     private String companyCity;
 
     /**
-    * 企业地址（区）
-    */
+     * 企业地址（区）
+     */
     private String companyArea;
 
     /**
-    * 企业详细地址
-    */
+     * 企业详细地址
+     */
     private String companyAddress;
 
     /**
-    * 放款时资金账户类型  1-公户 0-个人账户
-    */
+     * 放款时资金账户类型  1-公户 0-个人账户
+     */
     private String accountProp;
+
+    private static final long serialVersionUID = 1L;
 
     public String getSupId() {
         return supId;
     }
 
     public void setSupId(String supId) {
-        this.supId = supId;
+        this.supId = supId == null ? null : supId.trim();
     }
 
     public String getSupFlag() {
@@ -597,7 +600,7 @@ public class TSysSuppliers {
     }
 
     public void setSupFlag(String supFlag) {
-        this.supFlag = supFlag;
+        this.supFlag = supFlag == null ? null : supFlag.trim();
     }
 
     public String getSupCode() {
@@ -605,7 +608,7 @@ public class TSysSuppliers {
     }
 
     public void setSupCode(String supCode) {
-        this.supCode = supCode;
+        this.supCode = supCode == null ? null : supCode.trim();
     }
 
     public String getSupName() {
@@ -613,7 +616,7 @@ public class TSysSuppliers {
     }
 
     public void setSupName(String supName) {
-        this.supName = supName;
+        this.supName = supName == null ? null : supName.trim();
     }
 
     public String getSupShortname() {
@@ -621,7 +624,7 @@ public class TSysSuppliers {
     }
 
     public void setSupShortname(String supShortname) {
-        this.supShortname = supShortname;
+        this.supShortname = supShortname == null ? null : supShortname.trim();
     }
 
     public BigDecimal getCompanyId() {
@@ -637,7 +640,7 @@ public class TSysSuppliers {
     }
 
     public void setCorpBusinessLicense(String corpBusinessLicense) {
-        this.corpBusinessLicense = corpBusinessLicense;
+        this.corpBusinessLicense = corpBusinessLicense == null ? null : corpBusinessLicense.trim();
     }
 
     public String getSupAddress() {
@@ -645,7 +648,7 @@ public class TSysSuppliers {
     }
 
     public void setSupAddress(String supAddress) {
-        this.supAddress = supAddress;
+        this.supAddress = supAddress == null ? null : supAddress.trim();
     }
 
     public String getSupFax() {
@@ -653,7 +656,7 @@ public class TSysSuppliers {
     }
 
     public void setSupFax(String supFax) {
-        this.supFax = supFax;
+        this.supFax = supFax == null ? null : supFax.trim();
     }
 
     public String getSupZip() {
@@ -661,7 +664,7 @@ public class TSysSuppliers {
     }
 
     public void setSupZip(String supZip) {
-        this.supZip = supZip;
+        this.supZip = supZip == null ? null : supZip.trim();
     }
 
     public String getOragnizationCode() {
@@ -669,7 +672,7 @@ public class TSysSuppliers {
     }
 
     public void setOragnizationCode(String oragnizationCode) {
-        this.oragnizationCode = oragnizationCode;
+        this.oragnizationCode = oragnizationCode == null ? null : oragnizationCode.trim();
     }
 
     public String getTaxCode() {
@@ -677,7 +680,7 @@ public class TSysSuppliers {
     }
 
     public void setTaxCode(String taxCode) {
-        this.taxCode = taxCode;
+        this.taxCode = taxCode == null ? null : taxCode.trim();
     }
 
     public Date getSetupDate() {
@@ -717,7 +720,7 @@ public class TSysSuppliers {
     }
 
     public void setBusinessRange(String businessRange) {
-        this.businessRange = businessRange;
+        this.businessRange = businessRange == null ? null : businessRange.trim();
     }
 
     public String getSupWebsite() {
@@ -725,7 +728,7 @@ public class TSysSuppliers {
     }
 
     public void setSupWebsite(String supWebsite) {
-        this.supWebsite = supWebsite;
+        this.supWebsite = supWebsite == null ? null : supWebsite.trim();
     }
 
     public String getSupManager() {
@@ -733,7 +736,7 @@ public class TSysSuppliers {
     }
 
     public void setSupManager(String supManager) {
-        this.supManager = supManager;
+        this.supManager = supManager == null ? null : supManager.trim();
     }
 
     public String getProIndustry() {
@@ -741,7 +744,7 @@ public class TSysSuppliers {
     }
 
     public void setProIndustry(String proIndustry) {
-        this.proIndustry = proIndustry;
+        this.proIndustry = proIndustry == null ? null : proIndustry.trim();
     }
 
     public BigDecimal getIsRepo() {
@@ -757,7 +760,7 @@ public class TSysSuppliers {
     }
 
     public void setAreaId(String areaId) {
-        this.areaId = areaId;
+        this.areaId = areaId == null ? null : areaId.trim();
     }
 
     public String getProvId() {
@@ -765,7 +768,7 @@ public class TSysSuppliers {
     }
 
     public void setProvId(String provId) {
-        this.provId = provId;
+        this.provId = provId == null ? null : provId.trim();
     }
 
     public String getCityId() {
@@ -773,7 +776,7 @@ public class TSysSuppliers {
     }
 
     public void setCityId(String cityId) {
-        this.cityId = cityId;
+        this.cityId = cityId == null ? null : cityId.trim();
     }
 
     public Date getSignDate() {
@@ -789,7 +792,7 @@ public class TSysSuppliers {
     }
 
     public void setOpenBank(String openBank) {
-        this.openBank = openBank;
+        this.openBank = openBank == null ? null : openBank.trim();
     }
 
     public String getOpenBankNumber() {
@@ -797,7 +800,7 @@ public class TSysSuppliers {
     }
 
     public void setOpenBankNumber(String openBankNumber) {
-        this.openBankNumber = openBankNumber;
+        this.openBankNumber = openBankNumber == null ? null : openBankNumber.trim();
     }
 
     public String getSupLegalName() {
@@ -805,7 +808,7 @@ public class TSysSuppliers {
     }
 
     public void setSupLegalName(String supLegalName) {
-        this.supLegalName = supLegalName;
+        this.supLegalName = supLegalName == null ? null : supLegalName.trim();
     }
 
     public String getSupLegalPhone() {
@@ -813,7 +816,7 @@ public class TSysSuppliers {
     }
 
     public void setSupLegalPhone(String supLegalPhone) {
-        this.supLegalPhone = supLegalPhone;
+        this.supLegalPhone = supLegalPhone == null ? null : supLegalPhone.trim();
     }
 
     public String getSupLegalMobil() {
@@ -821,7 +824,7 @@ public class TSysSuppliers {
     }
 
     public void setSupLegalMobil(String supLegalMobil) {
-        this.supLegalMobil = supLegalMobil;
+        this.supLegalMobil = supLegalMobil == null ? null : supLegalMobil.trim();
     }
 
     public String getSubLegalAddress() {
@@ -829,7 +832,7 @@ public class TSysSuppliers {
     }
 
     public void setSubLegalAddress(String subLegalAddress) {
-        this.subLegalAddress = subLegalAddress;
+        this.subLegalAddress = subLegalAddress == null ? null : subLegalAddress.trim();
     }
 
     public String getSubLegalEmail() {
@@ -837,7 +840,7 @@ public class TSysSuppliers {
     }
 
     public void setSubLegalEmail(String subLegalEmail) {
-        this.subLegalEmail = subLegalEmail;
+        this.subLegalEmail = subLegalEmail == null ? null : subLegalEmail.trim();
     }
 
     public String getBillAddress() {
@@ -845,7 +848,7 @@ public class TSysSuppliers {
     }
 
     public void setBillAddress(String billAddress) {
-        this.billAddress = billAddress;
+        this.billAddress = billAddress == null ? null : billAddress.trim();
     }
 
     public String getBillPhone() {
@@ -853,7 +856,7 @@ public class TSysSuppliers {
     }
 
     public void setBillPhone(String billPhone) {
-        this.billPhone = billPhone;
+        this.billPhone = billPhone == null ? null : billPhone.trim();
     }
 
     public String getTaxQual() {
@@ -861,7 +864,7 @@ public class TSysSuppliers {
     }
 
     public void setTaxQual(String taxQual) {
-        this.taxQual = taxQual;
+        this.taxQual = taxQual == null ? null : taxQual.trim();
     }
 
     public String getTaxIdenNum() {
@@ -869,7 +872,7 @@ public class TSysSuppliers {
     }
 
     public void setTaxIdenNum(String taxIdenNum) {
-        this.taxIdenNum = taxIdenNum;
+        this.taxIdenNum = taxIdenNum == null ? null : taxIdenNum.trim();
     }
 
     public String getEmsToName() {
@@ -877,7 +880,7 @@ public class TSysSuppliers {
     }
 
     public void setEmsToName(String emsToName) {
-        this.emsToName = emsToName;
+        this.emsToName = emsToName == null ? null : emsToName.trim();
     }
 
     public String getEmsToAddress() {
@@ -885,7 +888,7 @@ public class TSysSuppliers {
     }
 
     public void setEmsToAddress(String emsToAddress) {
-        this.emsToAddress = emsToAddress;
+        this.emsToAddress = emsToAddress == null ? null : emsToAddress.trim();
     }
 
     public String getEmsToPhone() {
@@ -893,7 +896,7 @@ public class TSysSuppliers {
     }
 
     public void setEmsToPhone(String emsToPhone) {
-        this.emsToPhone = emsToPhone;
+        this.emsToPhone = emsToPhone == null ? null : emsToPhone.trim();
     }
 
     public String getEmsToZip() {
@@ -901,7 +904,7 @@ public class TSysSuppliers {
     }
 
     public void setEmsToZip(String emsToZip) {
-        this.emsToZip = emsToZip;
+        this.emsToZip = emsToZip == null ? null : emsToZip.trim();
     }
 
     public String getLoansOwnUnit() {
@@ -909,7 +912,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansOwnUnit(String loansOwnUnit) {
-        this.loansOwnUnit = loansOwnUnit;
+        this.loansOwnUnit = loansOwnUnit == null ? null : loansOwnUnit.trim();
     }
 
     public String getLoansOwnAddr() {
@@ -917,7 +920,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansOwnAddr(String loansOwnAddr) {
-        this.loansOwnAddr = loansOwnAddr;
+        this.loansOwnAddr = loansOwnAddr == null ? null : loansOwnAddr.trim();
     }
 
     public String getLoansOwnBank() {
@@ -925,7 +928,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansOwnBank(String loansOwnBank) {
-        this.loansOwnBank = loansOwnBank;
+        this.loansOwnBank = loansOwnBank == null ? null : loansOwnBank.trim();
     }
 
     public String getLoansOwnAccount() {
@@ -933,7 +936,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansOwnAccount(String loansOwnAccount) {
-        this.loansOwnAccount = loansOwnAccount;
+        this.loansOwnAccount = loansOwnAccount == null ? null : loansOwnAccount.trim();
     }
 
     public String getLoansTotalUnit() {
@@ -941,7 +944,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansTotalUnit(String loansTotalUnit) {
-        this.loansTotalUnit = loansTotalUnit;
+        this.loansTotalUnit = loansTotalUnit == null ? null : loansTotalUnit.trim();
     }
 
     public String getLoansTotalAdddr() {
@@ -949,7 +952,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansTotalAdddr(String loansTotalAdddr) {
-        this.loansTotalAdddr = loansTotalAdddr;
+        this.loansTotalAdddr = loansTotalAdddr == null ? null : loansTotalAdddr.trim();
     }
 
     public String getLoansTotalBank() {
@@ -957,7 +960,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansTotalBank(String loansTotalBank) {
-        this.loansTotalBank = loansTotalBank;
+        this.loansTotalBank = loansTotalBank == null ? null : loansTotalBank.trim();
     }
 
     public String getLoansTotalAccount() {
@@ -965,7 +968,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansTotalAccount(String loansTotalAccount) {
-        this.loansTotalAccount = loansTotalAccount;
+        this.loansTotalAccount = loansTotalAccount == null ? null : loansTotalAccount.trim();
     }
 
     public BigDecimal getSubScore() {
@@ -981,7 +984,7 @@ public class TSysSuppliers {
     }
 
     public void setFileNumber(String fileNumber) {
-        this.fileNumber = fileNumber;
+        this.fileNumber = fileNumber == null ? null : fileNumber.trim();
     }
 
     public String getUserId() {
@@ -989,7 +992,7 @@ public class TSysSuppliers {
     }
 
     public void setUserId(String userId) {
-        this.userId = userId;
+        this.userId = userId == null ? null : userId.trim();
     }
 
     public Date getCreateDate() {
@@ -1005,7 +1008,7 @@ public class TSysSuppliers {
     }
 
     public void setSupLevel(String supLevel) {
-        this.supLevel = supLevel;
+        this.supLevel = supLevel == null ? null : supLevel.trim();
     }
 
     public String getSupSwitch() {
@@ -1013,7 +1016,7 @@ public class TSysSuppliers {
     }
 
     public void setSupSwitch(String supSwitch) {
-        this.supSwitch = supSwitch;
+        this.supSwitch = supSwitch == null ? null : supSwitch.trim();
     }
 
     public String getCreditSwitch() {
@@ -1021,7 +1024,7 @@ public class TSysSuppliers {
     }
 
     public void setCreditSwitch(String creditSwitch) {
-        this.creditSwitch = creditSwitch;
+        this.creditSwitch = creditSwitch == null ? null : creditSwitch.trim();
     }
 
     public String getPaymentSwitch() {
@@ -1029,7 +1032,7 @@ public class TSysSuppliers {
     }
 
     public void setPaymentSwitch(String paymentSwitch) {
-        this.paymentSwitch = paymentSwitch;
+        this.paymentSwitch = paymentSwitch == null ? null : paymentSwitch.trim();
     }
 
     public String getBalanceLoanSwitch() {
@@ -1037,7 +1040,7 @@ public class TSysSuppliers {
     }
 
     public void setBalanceLoanSwitch(String balanceLoanSwitch) {
-        this.balanceLoanSwitch = balanceLoanSwitch;
+        this.balanceLoanSwitch = balanceLoanSwitch == null ? null : balanceLoanSwitch.trim();
     }
 
     public String getIrregularRepaymentSwitch() {
@@ -1045,7 +1048,7 @@ public class TSysSuppliers {
     }
 
     public void setIrregularRepaymentSwitch(String irregularRepaymentSwitch) {
-        this.irregularRepaymentSwitch = irregularRepaymentSwitch;
+        this.irregularRepaymentSwitch = irregularRepaymentSwitch == null ? null : irregularRepaymentSwitch.trim();
     }
 
     public String getbModelSwitch() {
@@ -1053,7 +1056,7 @@ public class TSysSuppliers {
     }
 
     public void setbModelSwitch(String bModelSwitch) {
-        this.bModelSwitch = bModelSwitch;
+        this.bModelSwitch = bModelSwitch == null ? null : bModelSwitch.trim();
     }
 
     public String getStatus() {
@@ -1061,7 +1064,7 @@ public class TSysSuppliers {
     }
 
     public void setStatus(String status) {
-        this.status = status;
+        this.status = status == null ? null : status.trim();
     }
 
     public String getSupLegalIdcard() {
@@ -1069,7 +1072,7 @@ public class TSysSuppliers {
     }
 
     public void setSupLegalIdcard(String supLegalIdcard) {
-        this.supLegalIdcard = supLegalIdcard;
+        this.supLegalIdcard = supLegalIdcard == null ? null : supLegalIdcard.trim();
     }
 
     public BigDecimal getOrgBmid() {
@@ -1085,7 +1088,7 @@ public class TSysSuppliers {
     }
 
     public void setScode(String scode) {
-        this.scode = scode;
+        this.scode = scode == null ? null : scode.trim();
     }
 
     public String getOpenBankAddr() {
@@ -1093,7 +1096,7 @@ public class TSysSuppliers {
     }
 
     public void setOpenBankAddr(String openBankAddr) {
-        this.openBankAddr = openBankAddr;
+        this.openBankAddr = openBankAddr == null ? null : openBankAddr.trim();
     }
 
     public String getEmsId() {
@@ -1101,7 +1104,7 @@ public class TSysSuppliers {
     }
 
     public void setEmsId(String emsId) {
-        this.emsId = emsId;
+        this.emsId = emsId == null ? null : emsId.trim();
     }
 
     public String getProvInstalmentId() {
@@ -1109,7 +1112,7 @@ public class TSysSuppliers {
     }
 
     public void setProvInstalmentId(String provInstalmentId) {
-        this.provInstalmentId = provInstalmentId;
+        this.provInstalmentId = provInstalmentId == null ? null : provInstalmentId.trim();
     }
 
     public String getFinanceSupId() {
@@ -1117,7 +1120,7 @@ public class TSysSuppliers {
     }
 
     public void setFinanceSupId(String financeSupId) {
-        this.financeSupId = financeSupId;
+        this.financeSupId = financeSupId == null ? null : financeSupId.trim();
     }
 
     public String getLoansCompanyUnit() {
@@ -1125,7 +1128,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansCompanyUnit(String loansCompanyUnit) {
-        this.loansCompanyUnit = loansCompanyUnit;
+        this.loansCompanyUnit = loansCompanyUnit == null ? null : loansCompanyUnit.trim();
     }
 
     public String getLoansCompanyAddr() {
@@ -1133,7 +1136,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansCompanyAddr(String loansCompanyAddr) {
-        this.loansCompanyAddr = loansCompanyAddr;
+        this.loansCompanyAddr = loansCompanyAddr == null ? null : loansCompanyAddr.trim();
     }
 
     public String getLoansCompanyBank() {
@@ -1141,7 +1144,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansCompanyBank(String loansCompanyBank) {
-        this.loansCompanyBank = loansCompanyBank;
+        this.loansCompanyBank = loansCompanyBank == null ? null : loansCompanyBank.trim();
     }
 
     public String getLoansCompanyAccount() {
@@ -1149,7 +1152,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansCompanyAccount(String loansCompanyAccount) {
-        this.loansCompanyAccount = loansCompanyAccount;
+        this.loansCompanyAccount = loansCompanyAccount == null ? null : loansCompanyAccount.trim();
     }
 
     public String getSmsSwitch() {
@@ -1157,7 +1160,7 @@ public class TSysSuppliers {
     }
 
     public void setSmsSwitch(String smsSwitch) {
-        this.smsSwitch = smsSwitch;
+        this.smsSwitch = smsSwitch == null ? null : smsSwitch.trim();
     }
 
     public BigDecimal getCreditStatus() {
@@ -1173,7 +1176,7 @@ public class TSysSuppliers {
     }
 
     public void setScanSwitch(String scanSwitch) {
-        this.scanSwitch = scanSwitch;
+        this.scanSwitch = scanSwitch == null ? null : scanSwitch.trim();
     }
 
     public String getDatafillSwitch() {
@@ -1181,7 +1184,7 @@ public class TSysSuppliers {
     }
 
     public void setDatafillSwitch(String datafillSwitch) {
-        this.datafillSwitch = datafillSwitch;
+        this.datafillSwitch = datafillSwitch == null ? null : datafillSwitch.trim();
     }
 
     public String getCreditGrade() {
@@ -1189,7 +1192,7 @@ public class TSysSuppliers {
     }
 
     public void setCreditGrade(String creditGrade) {
-        this.creditGrade = creditGrade;
+        this.creditGrade = creditGrade == null ? null : creditGrade.trim();
     }
 
     public BigDecimal getYingyeStatus() {
@@ -1221,7 +1224,7 @@ public class TSysSuppliers {
     }
 
     public void setParentId(String parentId) {
-        this.parentId = parentId;
+        this.parentId = parentId == null ? null : parentId.trim();
     }
 
     public String getLendingType() {
@@ -1229,7 +1232,7 @@ public class TSysSuppliers {
     }
 
     public void setLendingType(String lendingType) {
-        this.lendingType = lendingType;
+        this.lendingType = lendingType == null ? null : lendingType.trim();
     }
 
     public BigDecimal getCommissionRatio() {
@@ -1253,7 +1256,7 @@ public class TSysSuppliers {
     }
 
     public void setSubLegalProv(String subLegalProv) {
-        this.subLegalProv = subLegalProv;
+        this.subLegalProv = subLegalProv == null ? null : subLegalProv.trim();
     }
 
     public String getSubLegalCity() {
@@ -1261,7 +1264,7 @@ public class TSysSuppliers {
     }
 
     public void setSubLegalCity(String subLegalCity) {
-        this.subLegalCity = subLegalCity;
+        this.subLegalCity = subLegalCity == null ? null : subLegalCity.trim();
     }
 
     public String getSubLegalArea() {
@@ -1269,7 +1272,7 @@ public class TSysSuppliers {
     }
 
     public void setSubLegalArea(String subLegalArea) {
-        this.subLegalArea = subLegalArea;
+        this.subLegalArea = subLegalArea == null ? null : subLegalArea.trim();
     }
 
     public String getLoansOwnPay() {
@@ -1277,7 +1280,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansOwnPay(String loansOwnPay) {
-        this.loansOwnPay = loansOwnPay;
+        this.loansOwnPay = loansOwnPay == null ? null : loansOwnPay.trim();
     }
 
     public String getLoansTotalPay() {
@@ -1285,7 +1288,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansTotalPay(String loansTotalPay) {
-        this.loansTotalPay = loansTotalPay;
+        this.loansTotalPay = loansTotalPay == null ? null : loansTotalPay.trim();
     }
 
     public String getLoansCompanyPay() {
@@ -1293,7 +1296,7 @@ public class TSysSuppliers {
     }
 
     public void setLoansCompanyPay(String loansCompanyPay) {
-        this.loansCompanyPay = loansCompanyPay;
+        this.loansCompanyPay = loansCompanyPay == null ? null : loansCompanyPay.trim();
     }
 
     public String getAreaManager() {
@@ -1301,7 +1304,7 @@ public class TSysSuppliers {
     }
 
     public void setAreaManager(String areaManager) {
-        this.areaManager = areaManager;
+        this.areaManager = areaManager == null ? null : areaManager.trim();
     }
 
     public String getAreaManagerId() {
@@ -1309,7 +1312,7 @@ public class TSysSuppliers {
     }
 
     public void setAreaManagerId(String areaManagerId) {
-        this.areaManagerId = areaManagerId;
+        this.areaManagerId = areaManagerId == null ? null : areaManagerId.trim();
     }
 
     public BigDecimal getOwncompany() {
@@ -1333,7 +1336,7 @@ public class TSysSuppliers {
     }
 
     public void setSuppAreaJl(String suppAreaJl) {
-        this.suppAreaJl = suppAreaJl;
+        this.suppAreaJl = suppAreaJl == null ? null : suppAreaJl.trim();
     }
 
     public BigDecimal getIsRouting() {
@@ -1349,7 +1352,7 @@ public class TSysSuppliers {
     }
 
     public void setMerchantId(String merchantId) {
-        this.merchantId = merchantId;
+        this.merchantId = merchantId == null ? null : merchantId.trim();
     }
 
     public String getGpsSupp() {
@@ -1357,7 +1360,7 @@ public class TSysSuppliers {
     }
 
     public void setGpsSupp(String gpsSupp) {
-        this.gpsSupp = gpsSupp;
+        this.gpsSupp = gpsSupp == null ? null : gpsSupp.trim();
     }
 
     public String getVip() {
@@ -1365,7 +1368,7 @@ public class TSysSuppliers {
     }
 
     public void setVip(String vip) {
-        this.vip = vip;
+        this.vip = vip == null ? null : vip.trim();
     }
 
     public String getGdSuppCode() {
@@ -1373,7 +1376,7 @@ public class TSysSuppliers {
     }
 
     public void setGdSuppCode(String gdSuppCode) {
-        this.gdSuppCode = gdSuppCode;
+        this.gdSuppCode = gdSuppCode == null ? null : gdSuppCode.trim();
     }
 
     public String getGdSupp() {
@@ -1381,7 +1384,7 @@ public class TSysSuppliers {
     }
 
     public void setGdSupp(String gdSupp) {
-        this.gdSupp = gdSupp;
+        this.gdSupp = gdSupp == null ? null : gdSupp.trim();
     }
 
     public BigDecimal getSfwyfxqd() {
@@ -1429,7 +1432,7 @@ public class TSysSuppliers {
     }
 
     public void setDdId(String ddId) {
-        this.ddId = ddId;
+        this.ddId = ddId == null ? null : ddId.trim();
     }
 
     public String getSupCate() {
@@ -1437,7 +1440,7 @@ public class TSysSuppliers {
     }
 
     public void setSupCate(String supCate) {
-        this.supCate = supCate;
+        this.supCate = supCate == null ? null : supCate.trim();
     }
 
     public BigDecimal getIsLoansPay() {
@@ -1453,7 +1456,7 @@ public class TSysSuppliers {
     }
 
     public void setCompanyLeader(String companyLeader) {
-        this.companyLeader = companyLeader;
+        this.companyLeader = companyLeader == null ? null : companyLeader.trim();
     }
 
     public String getContactWay() {
@@ -1461,7 +1464,7 @@ public class TSysSuppliers {
     }
 
     public void setContactWay(String contactWay) {
-        this.contactWay = contactWay;
+        this.contactWay = contactWay == null ? null : contactWay.trim();
     }
 
     public String getMail() {
@@ -1469,7 +1472,7 @@ public class TSysSuppliers {
     }
 
     public void setMail(String mail) {
-        this.mail = mail;
+        this.mail = mail == null ? null : mail.trim();
     }
 
     public String getCompanyProv() {
@@ -1477,7 +1480,7 @@ public class TSysSuppliers {
     }
 
     public void setCompanyProv(String companyProv) {
-        this.companyProv = companyProv;
+        this.companyProv = companyProv == null ? null : companyProv.trim();
     }
 
     public String getCompanyCity() {
@@ -1485,7 +1488,7 @@ public class TSysSuppliers {
     }
 
     public void setCompanyCity(String companyCity) {
-        this.companyCity = companyCity;
+        this.companyCity = companyCity == null ? null : companyCity.trim();
     }
 
     public String getCompanyArea() {
@@ -1493,7 +1496,7 @@ public class TSysSuppliers {
     }
 
     public void setCompanyArea(String companyArea) {
-        this.companyArea = companyArea;
+        this.companyArea = companyArea == null ? null : companyArea.trim();
     }
 
     public String getCompanyAddress() {
@@ -1501,7 +1504,7 @@ public class TSysSuppliers {
     }
 
     public void setCompanyAddress(String companyAddress) {
-        this.companyAddress = companyAddress;
+        this.companyAddress = companyAddress == null ? null : companyAddress.trim();
     }
 
     public String getAccountProp() {
@@ -1509,6 +1512,6 @@ public class TSysSuppliers {
     }
 
     public void setAccountProp(String accountProp) {
-        this.accountProp = accountProp;
+        this.accountProp = accountProp == null ? null : accountProp.trim();
     }
 }

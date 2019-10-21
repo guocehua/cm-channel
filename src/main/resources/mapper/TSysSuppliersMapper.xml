@@ -3,210 +3,174 @@
 <mapper namespace="com.jianyuan.cmchannel.mapper.TSysSuppliersMapper">
   <resultMap id="BaseResultMap" type="com.jianyuan.cmchannel.domain.TSysSuppliers">
     <!--@mbg.generated-->
-    <!--@Table t_sys_suppliers-->
-    <result column="sup_id" jdbcType="VARCHAR" property="supId" />
-    <result column="sup_flag" jdbcType="VARCHAR" property="supFlag" />
-    <result column="sup_code" jdbcType="VARCHAR" property="supCode" />
-    <result column="sup_name" jdbcType="VARCHAR" property="supName" />
-    <result column="sup_shortname" jdbcType="VARCHAR" property="supShortname" />
-    <result column="company_id" jdbcType="DECIMAL" property="companyId" />
-    <result column="corp_business_license" jdbcType="VARCHAR" property="corpBusinessLicense" />
-    <result column="sup_address" jdbcType="VARCHAR" property="supAddress" />
-    <result column="sup_fax" jdbcType="VARCHAR" property="supFax" />
-    <result column="sup_zip" jdbcType="VARCHAR" property="supZip" />
-    <result column="oragnization_code" jdbcType="VARCHAR" property="oragnizationCode" />
-    <result column="tax_code" jdbcType="VARCHAR" property="taxCode" />
-    <result column="setup_date" jdbcType="TIMESTAMP" property="setupDate" />
-    <result column="period_validity" jdbcType="TIMESTAMP" property="periodValidity" />
-    <result column="registe_capital" jdbcType="DECIMAL" property="registeCapital" />
-    <result column="paiclup_capital" jdbcType="DECIMAL" property="paiclupCapital" />
-    <result column="business_range" jdbcType="VARCHAR" property="businessRange" />
-    <result column="sup_website" jdbcType="VARCHAR" property="supWebsite" />
-    <result column="sup_manager" jdbcType="VARCHAR" property="supManager" />
-    <result column="pro_industry" jdbcType="VARCHAR" property="proIndustry" />
-    <result column="is_repo" jdbcType="DECIMAL" property="isRepo" />
-    <result column="area_id" jdbcType="VARCHAR" property="areaId" />
-    <result column="prov_id" jdbcType="VARCHAR" property="provId" />
-    <result column="city_id" jdbcType="VARCHAR" property="cityId" />
-    <result column="sign_date" jdbcType="TIMESTAMP" property="signDate" />
-    <result column="open_bank" jdbcType="VARCHAR" property="openBank" />
-    <result column="open_bank_number" jdbcType="VARCHAR" property="openBankNumber" />
-    <result column="sup_legal_name" jdbcType="VARCHAR" property="supLegalName" />
-    <result column="sup_legal_phone" jdbcType="VARCHAR" property="supLegalPhone" />
-    <result column="sup_legal_mobil" jdbcType="VARCHAR" property="supLegalMobil" />
-    <result column="sub_legal_address" jdbcType="VARCHAR" property="subLegalAddress" />
-    <result column="sub_legal_email" jdbcType="VARCHAR" property="subLegalEmail" />
-    <result column="bill_address" jdbcType="VARCHAR" property="billAddress" />
-    <result column="bill_phone" jdbcType="VARCHAR" property="billPhone" />
-    <result column="tax_qual" jdbcType="VARCHAR" property="taxQual" />
-    <result column="tax_iden_num" jdbcType="VARCHAR" property="taxIdenNum" />
-    <result column="ems_to_name" jdbcType="VARCHAR" property="emsToName" />
-    <result column="ems_to_address" jdbcType="VARCHAR" property="emsToAddress" />
-    <result column="ems_to_phone" jdbcType="VARCHAR" property="emsToPhone" />
-    <result column="ems_to_zip" jdbcType="VARCHAR" property="emsToZip" />
-    <result column="loans_own_unit" jdbcType="VARCHAR" property="loansOwnUnit" />
-    <result column="loans_own_addr" jdbcType="VARCHAR" property="loansOwnAddr" />
-    <result column="loans_own_bank" jdbcType="VARCHAR" property="loansOwnBank" />
-    <result column="loans_own_account" jdbcType="VARCHAR" property="loansOwnAccount" />
-    <result column="loans_total_unit" jdbcType="VARCHAR" property="loansTotalUnit" />
-    <result column="loans_total_adddr" jdbcType="VARCHAR" property="loansTotalAdddr" />
-    <result column="loans_total_bank" jdbcType="VARCHAR" property="loansTotalBank" />
-    <result column="loans_total_account" jdbcType="VARCHAR" property="loansTotalAccount" />
-    <result column="sub_score" jdbcType="DECIMAL" property="subScore" />
-    <result column="file_number" jdbcType="VARCHAR" property="fileNumber" />
-    <result column="user_id" jdbcType="VARCHAR" property="userId" />
-    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
-    <result column="sup_level" jdbcType="VARCHAR" property="supLevel" />
-    <result column="sup_switch" jdbcType="VARCHAR" property="supSwitch" />
-    <result column="credit_switch" jdbcType="VARCHAR" property="creditSwitch" />
-    <result column="payment_switch" jdbcType="VARCHAR" property="paymentSwitch" />
-    <result column="balance_loan_switch" jdbcType="VARCHAR" property="balanceLoanSwitch" />
-    <result column="irregular_repayment_switch" jdbcType="VARCHAR" property="irregularRepaymentSwitch" />
-    <result column="b_model_switch" jdbcType="VARCHAR" property="bModelSwitch" />
-    <result column="status" jdbcType="VARCHAR" property="status" />
-    <result column="sup_legal_idcard" jdbcType="VARCHAR" property="supLegalIdcard" />
-    <result column="org_bmid" jdbcType="DECIMAL" property="orgBmid" />
-    <result column="scode" jdbcType="VARCHAR" property="scode" />
-    <result column="open_bank_addr" jdbcType="VARCHAR" property="openBankAddr" />
-    <result column="ems_id" jdbcType="VARCHAR" property="emsId" />
-    <result column="prov_instalment_id" jdbcType="VARCHAR" property="provInstalmentId" />
-    <result column="finance_sup_id" jdbcType="VARCHAR" property="financeSupId" />
-    <result column="loans_company_unit" jdbcType="VARCHAR" property="loansCompanyUnit" />
-    <result column="loans_company_addr" jdbcType="VARCHAR" property="loansCompanyAddr" />
-    <result column="loans_company_bank" jdbcType="VARCHAR" property="loansCompanyBank" />
-    <result column="loans_company_account" jdbcType="VARCHAR" property="loansCompanyAccount" />
-    <result column="sms_switch" jdbcType="VARCHAR" property="smsSwitch" />
-    <result column="credit_status" jdbcType="DECIMAL" property="creditStatus" />
-    <result column="scan_switch" jdbcType="VARCHAR" property="scanSwitch" />
-    <result column="datafill_switch" jdbcType="VARCHAR" property="datafillSwitch" />
-    <result column="credit_grade" jdbcType="VARCHAR" property="creditGrade" />
-    <result column="yingye_status" jdbcType="DECIMAL" property="yingyeStatus" />
-    <result column="score" jdbcType="DECIMAL" property="score" />
-    <result column="sup_type" jdbcType="DECIMAL" property="supType" />
-    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
-    <result column="lending_type" jdbcType="VARCHAR" property="lendingType" />
-    <result column="commission_ratio" jdbcType="DECIMAL" property="commissionRatio" />
-    <result column="commission_amount" jdbcType="DECIMAL" property="commissionAmount" />
-    <result column="sub_legal_prov" jdbcType="VARCHAR" property="subLegalProv" />
-    <result column="sub_legal_city" jdbcType="VARCHAR" property="subLegalCity" />
-    <result column="sub_legal_area" jdbcType="VARCHAR" property="subLegalArea" />
-    <result column="loans_own_pay" jdbcType="VARCHAR" property="loansOwnPay" />
-    <result column="loans_total_pay" jdbcType="VARCHAR" property="loansTotalPay" />
-    <result column="loans_company_pay" jdbcType="VARCHAR" property="loansCompanyPay" />
-    <result column="area_manager" jdbcType="VARCHAR" property="areaManager" />
-    <result column="area_manager_id" jdbcType="VARCHAR" property="areaManagerId" />
-    <result column="owncompany" jdbcType="DECIMAL" property="owncompany" />
-    <result column="supp_area_id" jdbcType="DECIMAL" property="suppAreaId" />
-    <result column="supp_area_jl" jdbcType="VARCHAR" property="suppAreaJl" />
-    <result column="is_routing" jdbcType="DECIMAL" property="isRouting" />
-    <result column="merchant_id" jdbcType="VARCHAR" property="merchantId" />
-    <result column="gps_supp" jdbcType="VARCHAR" property="gpsSupp" />
-    <result column="vip" jdbcType="VARCHAR" property="vip" />
-    <result column="gd_supp_code" jdbcType="VARCHAR" property="gdSuppCode" />
-    <result column="gd_supp" jdbcType="VARCHAR" property="gdSupp" />
-    <result column="sfwyfxqd" jdbcType="DECIMAL" property="sfwyfxqd" />
-    <result column="is_stage_db" jdbcType="DECIMAL" property="isStageDb" />
-    <result column="insure_id" jdbcType="DECIMAL" property="insureId" />
-    <result column="warn_day" jdbcType="DECIMAL" property="warnDay" />
-    <result column="goto_type" jdbcType="DECIMAL" property="gotoType" />
-    <result column="dd_id" jdbcType="VARCHAR" property="ddId" />
-    <result column="sup_cate" jdbcType="VARCHAR" property="supCate" />
-    <result column="is_loans_pay" jdbcType="DECIMAL" property="isLoansPay" />
-    <result column="company_leader" jdbcType="VARCHAR" property="companyLeader" />
-    <result column="contact_way" jdbcType="VARCHAR" property="contactWay" />
-    <result column="mail" jdbcType="VARCHAR" property="mail" />
-    <result column="company_prov" jdbcType="VARCHAR" property="companyProv" />
-    <result column="company_city" jdbcType="VARCHAR" property="companyCity" />
-    <result column="company_area" jdbcType="VARCHAR" property="companyArea" />
-    <result column="company_address" jdbcType="VARCHAR" property="companyAddress" />
-    <result column="account_prop" jdbcType="VARCHAR" property="accountProp" />
+    <!--@Table cm_channel.t_sys_suppliers-->
+    <result column="sup_id" property="supId" />
+    <result column="sup_flag" property="supFlag" />
+    <result column="sup_code" property="supCode" />
+    <result column="sup_name" property="supName" />
+    <result column="sup_shortname" property="supShortname" />
+    <result column="company_id" property="companyId" />
+    <result column="corp_business_license" property="corpBusinessLicense" />
+    <result column="sup_address" property="supAddress" />
+    <result column="sup_fax" property="supFax" />
+    <result column="sup_zip" property="supZip" />
+    <result column="oragnization_code" property="oragnizationCode" />
+    <result column="tax_code" property="taxCode" />
+    <result column="setup_date" property="setupDate" />
+    <result column="period_validity" property="periodValidity" />
+    <result column="registe_capital" property="registeCapital" />
+    <result column="paiclup_capital" property="paiclupCapital" />
+    <result column="business_range" property="businessRange" />
+    <result column="sup_website" property="supWebsite" />
+    <result column="sup_manager" property="supManager" />
+    <result column="pro_industry" property="proIndustry" />
+    <result column="is_repo" property="isRepo" />
+    <result column="area_id" property="areaId" />
+    <result column="prov_id" property="provId" />
+    <result column="city_id" property="cityId" />
+    <result column="sign_date" property="signDate" />
+    <result column="open_bank" property="openBank" />
+    <result column="open_bank_number" property="openBankNumber" />
+    <result column="sup_legal_name" property="supLegalName" />
+    <result column="sup_legal_phone" property="supLegalPhone" />
+    <result column="sup_legal_mobil" property="supLegalMobil" />
+    <result column="sub_legal_address" property="subLegalAddress" />
+    <result column="sub_legal_email" property="subLegalEmail" />
+    <result column="bill_address" property="billAddress" />
+    <result column="bill_phone" property="billPhone" />
+    <result column="tax_qual" property="taxQual" />
+    <result column="tax_iden_num" property="taxIdenNum" />
+    <result column="ems_to_name" property="emsToName" />
+    <result column="ems_to_address" property="emsToAddress" />
+    <result column="ems_to_phone" property="emsToPhone" />
+    <result column="ems_to_zip" property="emsToZip" />
+    <result column="loans_own_unit" property="loansOwnUnit" />
+    <result column="loans_own_addr" property="loansOwnAddr" />
+    <result column="loans_own_bank" property="loansOwnBank" />
+    <result column="loans_own_account" property="loansOwnAccount" />
+    <result column="loans_total_unit" property="loansTotalUnit" />
+    <result column="loans_total_adddr" property="loansTotalAdddr" />
+    <result column="loans_total_bank" property="loansTotalBank" />
+    <result column="loans_total_account" property="loansTotalAccount" />
+    <result column="sub_score" property="subScore" />
+    <result column="file_number" property="fileNumber" />
+    <result column="user_id" property="userId" />
+    <result column="create_date" property="createDate" />
+    <result column="sup_level" property="supLevel" />
+    <result column="sup_switch" property="supSwitch" />
+    <result column="credit_switch" property="creditSwitch" />
+    <result column="payment_switch" property="paymentSwitch" />
+    <result column="balance_loan_switch" property="balanceLoanSwitch" />
+    <result column="irregular_repayment_switch" property="irregularRepaymentSwitch" />
+    <result column="b_model_switch" property="bModelSwitch" />
+    <result column="status" property="status" />
+    <result column="sup_legal_idcard" property="supLegalIdcard" />
+    <result column="org_bmid" property="orgBmid" />
+    <result column="scode" property="scode" />
+    <result column="open_bank_addr" property="openBankAddr" />
+    <result column="ems_id" property="emsId" />
+    <result column="prov_instalment_id" property="provInstalmentId" />
+    <result column="finance_sup_id" property="financeSupId" />
+    <result column="loans_company_unit" property="loansCompanyUnit" />
+    <result column="loans_company_addr" property="loansCompanyAddr" />
+    <result column="loans_company_bank" property="loansCompanyBank" />
+    <result column="loans_company_account" property="loansCompanyAccount" />
+    <result column="sms_switch" property="smsSwitch" />
+    <result column="credit_status" property="creditStatus" />
+    <result column="scan_switch" property="scanSwitch" />
+    <result column="datafill_switch" property="datafillSwitch" />
+    <result column="credit_grade" property="creditGrade" />
+    <result column="yingye_status" property="yingyeStatus" />
+    <result column="score" property="score" />
+    <result column="sup_type" property="supType" />
+    <result column="parent_id" property="parentId" />
+    <result column="lending_type" property="lendingType" />
+    <result column="commission_ratio" property="commissionRatio" />
+    <result column="commission_amount" property="commissionAmount" />
+    <result column="sub_legal_prov" property="subLegalProv" />
+    <result column="sub_legal_city" property="subLegalCity" />
+    <result column="sub_legal_area" property="subLegalArea" />
+    <result column="loans_own_pay" property="loansOwnPay" />
+    <result column="loans_total_pay" property="loansTotalPay" />
+    <result column="loans_company_pay" property="loansCompanyPay" />
+    <result column="area_manager" property="areaManager" />
+    <result column="area_manager_id" property="areaManagerId" />
+    <result column="owncompany" property="owncompany" />
+    <result column="supp_area_id" property="suppAreaId" />
+    <result column="supp_area_jl" property="suppAreaJl" />
+    <result column="is_routing" property="isRouting" />
+    <result column="merchant_id" property="merchantId" />
+    <result column="gps_supp" property="gpsSupp" />
+    <result column="vip" property="vip" />
+    <result column="gd_supp_code" property="gdSuppCode" />
+    <result column="gd_supp" property="gdSupp" />
+    <result column="sfwyfxqd" property="sfwyfxqd" />
+    <result column="is_stage_db" property="isStageDb" />
+    <result column="insure_id" property="insureId" />
+    <result column="warn_day" property="warnDay" />
+    <result column="goto_type" property="gotoType" />
+    <result column="dd_id" property="ddId" />
+    <result column="sup_cate" property="supCate" />
+    <result column="is_loans_pay" property="isLoansPay" />
+    <result column="company_leader" property="companyLeader" />
+    <result column="contact_way" property="contactWay" />
+    <result column="mail" property="mail" />
+    <result column="company_prov" property="companyProv" />
+    <result column="company_city" property="companyCity" />
+    <result column="company_area" property="companyArea" />
+    <result column="company_address" property="companyAddress" />
+    <result column="account_prop" property="accountProp" />
   </resultMap>
   <insert id="insert" parameterType="com.jianyuan.cmchannel.domain.TSysSuppliers">
     <!--@mbg.generated-->
-    insert into t_sys_suppliers (sup_id, sup_flag, sup_code, 
-      sup_name, sup_shortname, company_id, 
-      corp_business_license, sup_address, sup_fax, 
-      sup_zip, oragnization_code, tax_code, 
-      setup_date, period_validity, registe_capital, 
-      paiclup_capital, business_range, sup_website, 
-      sup_manager, pro_industry, is_repo, 
-      area_id, prov_id, city_id, 
-      sign_date, open_bank, open_bank_number, 
-      sup_legal_name, sup_legal_phone, sup_legal_mobil, 
-      sub_legal_address, sub_legal_email, bill_address, 
-      bill_phone, tax_qual, tax_iden_num, 
-      ems_to_name, ems_to_address, ems_to_phone, 
-      ems_to_zip, loans_own_unit, loans_own_addr, 
-      loans_own_bank, loans_own_account, loans_total_unit, 
-      loans_total_adddr, loans_total_bank, loans_total_account, 
-      sub_score, file_number, user_id, 
-      create_date, sup_level, sup_switch, 
-      credit_switch, payment_switch, balance_loan_switch, 
-      irregular_repayment_switch, b_model_switch, 
-      `status`, sup_legal_idcard, org_bmid, 
-      scode, open_bank_addr, ems_id, 
-      prov_instalment_id, finance_sup_id, loans_company_unit, 
-      loans_company_addr, loans_company_bank, loans_company_account, 
-      sms_switch, credit_status, scan_switch, 
-      datafill_switch, credit_grade, yingye_status, 
-      score, sup_type, parent_id, 
-      lending_type, commission_ratio, commission_amount, 
-      sub_legal_prov, sub_legal_city, sub_legal_area, 
-      loans_own_pay, loans_total_pay, loans_company_pay, 
-      area_manager, area_manager_id, owncompany, 
-      supp_area_id, supp_area_jl, is_routing, 
-      merchant_id, gps_supp, vip, 
-      gd_supp_code, gd_supp, sfwyfxqd, 
-      is_stage_db, insure_id, warn_day, 
-      goto_type, dd_id, sup_cate, 
-      is_loans_pay, company_leader, contact_way, 
-      mail, company_prov, company_city, 
-      company_area, company_address, account_prop
-      )
-    values (#{supId,jdbcType=VARCHAR}, #{supFlag,jdbcType=VARCHAR}, #{supCode,jdbcType=VARCHAR}, 
-      #{supName,jdbcType=VARCHAR}, #{supShortname,jdbcType=VARCHAR}, #{companyId,jdbcType=DECIMAL}, 
-      #{corpBusinessLicense,jdbcType=VARCHAR}, #{supAddress,jdbcType=VARCHAR}, #{supFax,jdbcType=VARCHAR}, 
-      #{supZip,jdbcType=VARCHAR}, #{oragnizationCode,jdbcType=VARCHAR}, #{taxCode,jdbcType=VARCHAR}, 
-      #{setupDate,jdbcType=TIMESTAMP}, #{periodValidity,jdbcType=TIMESTAMP}, #{registeCapital,jdbcType=DECIMAL}, 
-      #{paiclupCapital,jdbcType=DECIMAL}, #{businessRange,jdbcType=VARCHAR}, #{supWebsite,jdbcType=VARCHAR}, 
-      #{supManager,jdbcType=VARCHAR}, #{proIndustry,jdbcType=VARCHAR}, #{isRepo,jdbcType=DECIMAL}, 
-      #{areaId,jdbcType=VARCHAR}, #{provId,jdbcType=VARCHAR}, #{cityId,jdbcType=VARCHAR}, 
-      #{signDate,jdbcType=TIMESTAMP}, #{openBank,jdbcType=VARCHAR}, #{openBankNumber,jdbcType=VARCHAR}, 
-      #{supLegalName,jdbcType=VARCHAR}, #{supLegalPhone,jdbcType=VARCHAR}, #{supLegalMobil,jdbcType=VARCHAR}, 
-      #{subLegalAddress,jdbcType=VARCHAR}, #{subLegalEmail,jdbcType=VARCHAR}, #{billAddress,jdbcType=VARCHAR}, 
-      #{billPhone,jdbcType=VARCHAR}, #{taxQual,jdbcType=VARCHAR}, #{taxIdenNum,jdbcType=VARCHAR}, 
-      #{emsToName,jdbcType=VARCHAR}, #{emsToAddress,jdbcType=VARCHAR}, #{emsToPhone,jdbcType=VARCHAR}, 
-      #{emsToZip,jdbcType=VARCHAR}, #{loansOwnUnit,jdbcType=VARCHAR}, #{loansOwnAddr,jdbcType=VARCHAR}, 
-      #{loansOwnBank,jdbcType=VARCHAR}, #{loansOwnAccount,jdbcType=VARCHAR}, #{loansTotalUnit,jdbcType=VARCHAR}, 
-      #{loansTotalAdddr,jdbcType=VARCHAR}, #{loansTotalBank,jdbcType=VARCHAR}, #{loansTotalAccount,jdbcType=VARCHAR}, 
-      #{subScore,jdbcType=DECIMAL}, #{fileNumber,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, 
-      #{createDate,jdbcType=TIMESTAMP}, #{supLevel,jdbcType=VARCHAR}, #{supSwitch,jdbcType=VARCHAR}, 
-      #{creditSwitch,jdbcType=VARCHAR}, #{paymentSwitch,jdbcType=VARCHAR}, #{balanceLoanSwitch,jdbcType=VARCHAR}, 
-      #{irregularRepaymentSwitch,jdbcType=VARCHAR}, #{bModelSwitch,jdbcType=VARCHAR}, 
-      #{status,jdbcType=VARCHAR}, #{supLegalIdcard,jdbcType=VARCHAR}, #{orgBmid,jdbcType=DECIMAL}, 
-      #{scode,jdbcType=VARCHAR}, #{openBankAddr,jdbcType=VARCHAR}, #{emsId,jdbcType=VARCHAR}, 
-      #{provInstalmentId,jdbcType=VARCHAR}, #{financeSupId,jdbcType=VARCHAR}, #{loansCompanyUnit,jdbcType=VARCHAR}, 
-      #{loansCompanyAddr,jdbcType=VARCHAR}, #{loansCompanyBank,jdbcType=VARCHAR}, #{loansCompanyAccount,jdbcType=VARCHAR}, 
-      #{smsSwitch,jdbcType=VARCHAR}, #{creditStatus,jdbcType=DECIMAL}, #{scanSwitch,jdbcType=VARCHAR}, 
-      #{datafillSwitch,jdbcType=VARCHAR}, #{creditGrade,jdbcType=VARCHAR}, #{yingyeStatus,jdbcType=DECIMAL}, 
-      #{score,jdbcType=DECIMAL}, #{supType,jdbcType=DECIMAL}, #{parentId,jdbcType=VARCHAR}, 
-      #{lendingType,jdbcType=VARCHAR}, #{commissionRatio,jdbcType=DECIMAL}, #{commissionAmount,jdbcType=DECIMAL}, 
-      #{subLegalProv,jdbcType=VARCHAR}, #{subLegalCity,jdbcType=VARCHAR}, #{subLegalArea,jdbcType=VARCHAR}, 
-      #{loansOwnPay,jdbcType=VARCHAR}, #{loansTotalPay,jdbcType=VARCHAR}, #{loansCompanyPay,jdbcType=VARCHAR}, 
-      #{areaManager,jdbcType=VARCHAR}, #{areaManagerId,jdbcType=VARCHAR}, #{owncompany,jdbcType=DECIMAL}, 
-      #{suppAreaId,jdbcType=DECIMAL}, #{suppAreaJl,jdbcType=VARCHAR}, #{isRouting,jdbcType=DECIMAL}, 
-      #{merchantId,jdbcType=VARCHAR}, #{gpsSupp,jdbcType=VARCHAR}, #{vip,jdbcType=VARCHAR}, 
-      #{gdSuppCode,jdbcType=VARCHAR}, #{gdSupp,jdbcType=VARCHAR}, #{sfwyfxqd,jdbcType=DECIMAL}, 
-      #{isStageDb,jdbcType=DECIMAL}, #{insureId,jdbcType=DECIMAL}, #{warnDay,jdbcType=DECIMAL}, 
-      #{gotoType,jdbcType=DECIMAL}, #{ddId,jdbcType=VARCHAR}, #{supCate,jdbcType=VARCHAR}, 
-      #{isLoansPay,jdbcType=DECIMAL}, #{companyLeader,jdbcType=VARCHAR}, #{contactWay,jdbcType=VARCHAR}, 
-      #{mail,jdbcType=VARCHAR}, #{companyProv,jdbcType=VARCHAR}, #{companyCity,jdbcType=VARCHAR}, 
-      #{companyArea,jdbcType=VARCHAR}, #{companyAddress,jdbcType=VARCHAR}, #{accountProp,jdbcType=VARCHAR}
-      )
+    insert into cm_channel.t_sys_suppliers (sup_id, sup_flag, sup_code, sup_name, sup_shortname, company_id, 
+      corp_business_license, sup_address, sup_fax, sup_zip, oragnization_code, 
+      tax_code, setup_date, period_validity, registe_capital, paiclup_capital, 
+      business_range, sup_website, sup_manager, pro_industry, is_repo, area_id, 
+      prov_id, city_id, sign_date, open_bank, open_bank_number, sup_legal_name, 
+      sup_legal_phone, sup_legal_mobil, sub_legal_address, sub_legal_email, bill_address, 
+      bill_phone, tax_qual, tax_iden_num, ems_to_name, ems_to_address, ems_to_phone, 
+      ems_to_zip, loans_own_unit, loans_own_addr, loans_own_bank, loans_own_account, 
+      loans_total_unit, loans_total_adddr, loans_total_bank, loans_total_account, 
+      sub_score, file_number, user_id, create_date, sup_level, sup_switch, 
+      credit_switch, payment_switch, balance_loan_switch, irregular_repayment_switch, 
+      b_model_switch, `status`, sup_legal_idcard, org_bmid, scode, open_bank_addr, 
+      ems_id, prov_instalment_id, finance_sup_id, loans_company_unit, loans_company_addr, 
+      loans_company_bank, loans_company_account, sms_switch, credit_status, scan_switch, 
+      datafill_switch, credit_grade, yingye_status, score, sup_type, parent_id, 
+      lending_type, commission_ratio, commission_amount, sub_legal_prov, sub_legal_city, 
+      sub_legal_area, loans_own_pay, loans_total_pay, loans_company_pay, area_manager, 
+      area_manager_id, owncompany, supp_area_id, supp_area_jl, is_routing, merchant_id, 
+      gps_supp, vip, gd_supp_code, gd_supp, sfwyfxqd, is_stage_db, insure_id, 
+      warn_day, goto_type, dd_id, sup_cate, is_loans_pay, company_leader, 
+      contact_way, mail, company_prov, company_city, company_area, company_address, 
+      account_prop)
+    values (#{supId}, #{supFlag}, #{supCode}, #{supName}, #{supShortname}, #{companyId}, 
+      #{corpBusinessLicense}, #{supAddress}, #{supFax}, #{supZip}, #{oragnizationCode}, 
+      #{taxCode}, #{setupDate}, #{periodValidity}, #{registeCapital}, #{paiclupCapital}, 
+      #{businessRange}, #{supWebsite}, #{supManager}, #{proIndustry}, #{isRepo}, #{areaId}, 
+      #{provId}, #{cityId}, #{signDate}, #{openBank}, #{openBankNumber}, #{supLegalName}, 
+      #{supLegalPhone}, #{supLegalMobil}, #{subLegalAddress}, #{subLegalEmail}, #{billAddress}, 
+      #{billPhone}, #{taxQual}, #{taxIdenNum}, #{emsToName}, #{emsToAddress}, #{emsToPhone}, 
+      #{emsToZip}, #{loansOwnUnit}, #{loansOwnAddr}, #{loansOwnBank}, #{loansOwnAccount}, 
+      #{loansTotalUnit}, #{loansTotalAdddr}, #{loansTotalBank}, #{loansTotalAccount}, 
+      #{subScore}, #{fileNumber}, #{userId}, #{createDate}, #{supLevel}, #{supSwitch}, 
+      #{creditSwitch}, #{paymentSwitch}, #{balanceLoanSwitch}, #{irregularRepaymentSwitch}, 
+      #{bModelSwitch}, #{status}, #{supLegalIdcard}, #{orgBmid}, #{scode}, #{openBankAddr}, 
+      #{emsId}, #{provInstalmentId}, #{financeSupId}, #{loansCompanyUnit}, #{loansCompanyAddr}, 
+      #{loansCompanyBank}, #{loansCompanyAccount}, #{smsSwitch}, #{creditStatus}, #{scanSwitch}, 
+      #{datafillSwitch}, #{creditGrade}, #{yingyeStatus}, #{score}, #{supType}, #{parentId}, 
+      #{lendingType}, #{commissionRatio}, #{commissionAmount}, #{subLegalProv}, #{subLegalCity}, 
+      #{subLegalArea}, #{loansOwnPay}, #{loansTotalPay}, #{loansCompanyPay}, #{areaManager}, 
+      #{areaManagerId}, #{owncompany}, #{suppAreaId}, #{suppAreaJl}, #{isRouting}, #{merchantId}, 
+      #{gpsSupp}, #{vip}, #{gdSuppCode}, #{gdSupp}, #{sfwyfxqd}, #{isStageDb}, #{insureId}, 
+      #{warnDay}, #{gotoType}, #{ddId}, #{supCate}, #{isLoansPay}, #{companyLeader}, 
+      #{contactWay}, #{mail}, #{companyProv}, #{companyCity}, #{companyArea}, #{companyAddress}, 
+      #{accountProp})
   </insert>
   <insert id="insertSelective" parameterType="com.jianyuan.cmchannel.domain.TSysSuppliers">
     <!--@mbg.generated-->
-    insert into t_sys_suppliers
+    insert into cm_channel.t_sys_suppliers
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="supId != null">
         sup_id,
@@ -559,352 +523,352 @@
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="supId != null">
-        #{supId,jdbcType=VARCHAR},
+        #{supId},
       </if>
       <if test="supFlag != null">
-        #{supFlag,jdbcType=VARCHAR},
+        #{supFlag},
       </if>
       <if test="supCode != null">
-        #{supCode,jdbcType=VARCHAR},
+        #{supCode},
       </if>
       <if test="supName != null">
-        #{supName,jdbcType=VARCHAR},
+        #{supName},
       </if>
       <if test="supShortname != null">
-        #{supShortname,jdbcType=VARCHAR},
+        #{supShortname},
       </if>
       <if test="companyId != null">
-        #{companyId,jdbcType=DECIMAL},
+        #{companyId},
       </if>
       <if test="corpBusinessLicense != null">
-        #{corpBusinessLicense,jdbcType=VARCHAR},
+        #{corpBusinessLicense},
       </if>
       <if test="supAddress != null">
-        #{supAddress,jdbcType=VARCHAR},
+        #{supAddress},
       </if>
       <if test="supFax != null">
-        #{supFax,jdbcType=VARCHAR},
+        #{supFax},
       </if>
       <if test="supZip != null">
-        #{supZip,jdbcType=VARCHAR},
+        #{supZip},
       </if>
       <if test="oragnizationCode != null">
-        #{oragnizationCode,jdbcType=VARCHAR},
+        #{oragnizationCode},
       </if>
       <if test="taxCode != null">
-        #{taxCode,jdbcType=VARCHAR},
+        #{taxCode},
       </if>
       <if test="setupDate != null">
-        #{setupDate,jdbcType=TIMESTAMP},
+        #{setupDate},
       </if>
       <if test="periodValidity != null">
-        #{periodValidity,jdbcType=TIMESTAMP},
+        #{periodValidity},
       </if>
       <if test="registeCapital != null">
-        #{registeCapital,jdbcType=DECIMAL},
+        #{registeCapital},
       </if>
       <if test="paiclupCapital != null">
-        #{paiclupCapital,jdbcType=DECIMAL},
+        #{paiclupCapital},
       </if>
       <if test="businessRange != null">
-        #{businessRange,jdbcType=VARCHAR},
+        #{businessRange},
       </if>
       <if test="supWebsite != null">
-        #{supWebsite,jdbcType=VARCHAR},
+        #{supWebsite},
       </if>
       <if test="supManager != null">
-        #{supManager,jdbcType=VARCHAR},
+        #{supManager},
       </if>
       <if test="proIndustry != null">
-        #{proIndustry,jdbcType=VARCHAR},
+        #{proIndustry},
       </if>
       <if test="isRepo != null">
-        #{isRepo,jdbcType=DECIMAL},
+        #{isRepo},
       </if>
       <if test="areaId != null">
-        #{areaId,jdbcType=VARCHAR},
+        #{areaId},
       </if>
       <if test="provId != null">
-        #{provId,jdbcType=VARCHAR},
+        #{provId},
       </if>
       <if test="cityId != null">
-        #{cityId,jdbcType=VARCHAR},
+        #{cityId},
       </if>
       <if test="signDate != null">
-        #{signDate,jdbcType=TIMESTAMP},
+        #{signDate},
       </if>
       <if test="openBank != null">
-        #{openBank,jdbcType=VARCHAR},
+        #{openBank},
       </if>
       <if test="openBankNumber != null">
-        #{openBankNumber,jdbcType=VARCHAR},
+        #{openBankNumber},
       </if>
       <if test="supLegalName != null">
-        #{supLegalName,jdbcType=VARCHAR},
+        #{supLegalName},
       </if>
       <if test="supLegalPhone != null">
-        #{supLegalPhone,jdbcType=VARCHAR},
+        #{supLegalPhone},
       </if>
       <if test="supLegalMobil != null">
-        #{supLegalMobil,jdbcType=VARCHAR},
+        #{supLegalMobil},
       </if>
       <if test="subLegalAddress != null">
-        #{subLegalAddress,jdbcType=VARCHAR},
+        #{subLegalAddress},
       </if>
       <if test="subLegalEmail != null">
-        #{subLegalEmail,jdbcType=VARCHAR},
+        #{subLegalEmail},
       </if>
       <if test="billAddress != null">
-        #{billAddress,jdbcType=VARCHAR},
+        #{billAddress},
       </if>
       <if test="billPhone != null">
-        #{billPhone,jdbcType=VARCHAR},
+        #{billPhone},
       </if>
       <if test="taxQual != null">
-        #{taxQual,jdbcType=VARCHAR},
+        #{taxQual},
       </if>
       <if test="taxIdenNum != null">
-        #{taxIdenNum,jdbcType=VARCHAR},
+        #{taxIdenNum},
       </if>
       <if test="emsToName != null">
-        #{emsToName,jdbcType=VARCHAR},
+        #{emsToName},
       </if>
       <if test="emsToAddress != null">
-        #{emsToAddress,jdbcType=VARCHAR},
+        #{emsToAddress},
       </if>
       <if test="emsToPhone != null">
-        #{emsToPhone,jdbcType=VARCHAR},
+        #{emsToPhone},
       </if>
       <if test="emsToZip != null">
-        #{emsToZip,jdbcType=VARCHAR},
+        #{emsToZip},
       </if>
       <if test="loansOwnUnit != null">
-        #{loansOwnUnit,jdbcType=VARCHAR},
+        #{loansOwnUnit},
       </if>
       <if test="loansOwnAddr != null">
-        #{loansOwnAddr,jdbcType=VARCHAR},
+        #{loansOwnAddr},
       </if>
       <if test="loansOwnBank != null">
-        #{loansOwnBank,jdbcType=VARCHAR},
+        #{loansOwnBank},
       </if>
       <if test="loansOwnAccount != null">
-        #{loansOwnAccount,jdbcType=VARCHAR},
+        #{loansOwnAccount},
       </if>
       <if test="loansTotalUnit != null">
-        #{loansTotalUnit,jdbcType=VARCHAR},
+        #{loansTotalUnit},
       </if>
       <if test="loansTotalAdddr != null">
-        #{loansTotalAdddr,jdbcType=VARCHAR},
+        #{loansTotalAdddr},
       </if>
       <if test="loansTotalBank != null">
-        #{loansTotalBank,jdbcType=VARCHAR},
+        #{loansTotalBank},
       </if>
       <if test="loansTotalAccount != null">
-        #{loansTotalAccount,jdbcType=VARCHAR},
+        #{loansTotalAccount},
       </if>
       <if test="subScore != null">
-        #{subScore,jdbcType=DECIMAL},
+        #{subScore},
       </if>
       <if test="fileNumber != null">
-        #{fileNumber,jdbcType=VARCHAR},
+        #{fileNumber},
       </if>
       <if test="userId != null">
-        #{userId,jdbcType=VARCHAR},
+        #{userId},
       </if>
       <if test="createDate != null">
-        #{createDate,jdbcType=TIMESTAMP},
+        #{createDate},
       </if>
       <if test="supLevel != null">
-        #{supLevel,jdbcType=VARCHAR},
+        #{supLevel},
       </if>
       <if test="supSwitch != null">
-        #{supSwitch,jdbcType=VARCHAR},
+        #{supSwitch},
       </if>
       <if test="creditSwitch != null">
-        #{creditSwitch,jdbcType=VARCHAR},
+        #{creditSwitch},
       </if>
       <if test="paymentSwitch != null">
-        #{paymentSwitch,jdbcType=VARCHAR},
+        #{paymentSwitch},
       </if>
       <if test="balanceLoanSwitch != null">
-        #{balanceLoanSwitch,jdbcType=VARCHAR},
+        #{balanceLoanSwitch},
       </if>
       <if test="irregularRepaymentSwitch != null">
-        #{irregularRepaymentSwitch,jdbcType=VARCHAR},
+        #{irregularRepaymentSwitch},
       </if>
       <if test="bModelSwitch != null">
-        #{bModelSwitch,jdbcType=VARCHAR},
+        #{bModelSwitch},
       </if>
       <if test="status != null">
-        #{status,jdbcType=VARCHAR},
+        #{status},
       </if>
       <if test="supLegalIdcard != null">
-        #{supLegalIdcard,jdbcType=VARCHAR},
+        #{supLegalIdcard},
       </if>
       <if test="orgBmid != null">
-        #{orgBmid,jdbcType=DECIMAL},
+        #{orgBmid},
       </if>
       <if test="scode != null">
-        #{scode,jdbcType=VARCHAR},
+        #{scode},
       </if>
       <if test="openBankAddr != null">
-        #{openBankAddr,jdbcType=VARCHAR},
+        #{openBankAddr},
       </if>
       <if test="emsId != null">
-        #{emsId,jdbcType=VARCHAR},
+        #{emsId},
       </if>
       <if test="provInstalmentId != null">
-        #{provInstalmentId,jdbcType=VARCHAR},
+        #{provInstalmentId},
       </if>
       <if test="financeSupId != null">
-        #{financeSupId,jdbcType=VARCHAR},
+        #{financeSupId},
       </if>
       <if test="loansCompanyUnit != null">
-        #{loansCompanyUnit,jdbcType=VARCHAR},
+        #{loansCompanyUnit},
       </if>
       <if test="loansCompanyAddr != null">
-        #{loansCompanyAddr,jdbcType=VARCHAR},
+        #{loansCompanyAddr},
       </if>
       <if test="loansCompanyBank != null">
-        #{loansCompanyBank,jdbcType=VARCHAR},
+        #{loansCompanyBank},
       </if>
       <if test="loansCompanyAccount != null">
-        #{loansCompanyAccount,jdbcType=VARCHAR},
+        #{loansCompanyAccount},
       </if>
       <if test="smsSwitch != null">
-        #{smsSwitch,jdbcType=VARCHAR},
+        #{smsSwitch},
       </if>
       <if test="creditStatus != null">
-        #{creditStatus,jdbcType=DECIMAL},
+        #{creditStatus},
       </if>
       <if test="scanSwitch != null">
-        #{scanSwitch,jdbcType=VARCHAR},
+        #{scanSwitch},
       </if>
       <if test="datafillSwitch != null">
-        #{datafillSwitch,jdbcType=VARCHAR},
+        #{datafillSwitch},
       </if>
       <if test="creditGrade != null">
-        #{creditGrade,jdbcType=VARCHAR},
+        #{creditGrade},
       </if>
       <if test="yingyeStatus != null">
-        #{yingyeStatus,jdbcType=DECIMAL},
+        #{yingyeStatus},
       </if>
       <if test="score != null">
-        #{score,jdbcType=DECIMAL},
+        #{score},
       </if>
       <if test="supType != null">
-        #{supType,jdbcType=DECIMAL},
+        #{supType},
       </if>
       <if test="parentId != null">
-        #{parentId,jdbcType=VARCHAR},
+        #{parentId},
       </if>
       <if test="lendingType != null">
-        #{lendingType,jdbcType=VARCHAR},
+        #{lendingType},
       </if>
       <if test="commissionRatio != null">
-        #{commissionRatio,jdbcType=DECIMAL},
+        #{commissionRatio},
       </if>
       <if test="commissionAmount != null">
-        #{commissionAmount,jdbcType=DECIMAL},
+        #{commissionAmount},
       </if>
       <if test="subLegalProv != null">
-        #{subLegalProv,jdbcType=VARCHAR},
+        #{subLegalProv},
       </if>
       <if test="subLegalCity != null">
-        #{subLegalCity,jdbcType=VARCHAR},
+        #{subLegalCity},
       </if>
       <if test="subLegalArea != null">
-        #{subLegalArea,jdbcType=VARCHAR},
+        #{subLegalArea},
       </if>
       <if test="loansOwnPay != null">
-        #{loansOwnPay,jdbcType=VARCHAR},
+        #{loansOwnPay},
       </if>
       <if test="loansTotalPay != null">
-        #{loansTotalPay,jdbcType=VARCHAR},
+        #{loansTotalPay},
       </if>
       <if test="loansCompanyPay != null">
-        #{loansCompanyPay,jdbcType=VARCHAR},
+        #{loansCompanyPay},
       </if>
       <if test="areaManager != null">
-        #{areaManager,jdbcType=VARCHAR},
+        #{areaManager},
       </if>
       <if test="areaManagerId != null">
-        #{areaManagerId,jdbcType=VARCHAR},
+        #{areaManagerId},
       </if>
       <if test="owncompany != null">
-        #{owncompany,jdbcType=DECIMAL},
+        #{owncompany},
       </if>
       <if test="suppAreaId != null">
-        #{suppAreaId,jdbcType=DECIMAL},
+        #{suppAreaId},
       </if>
       <if test="suppAreaJl != null">
-        #{suppAreaJl,jdbcType=VARCHAR},
+        #{suppAreaJl},
       </if>
       <if test="isRouting != null">
-        #{isRouting,jdbcType=DECIMAL},
+        #{isRouting},
       </if>
       <if test="merchantId != null">
-        #{merchantId,jdbcType=VARCHAR},
+        #{merchantId},
       </if>
       <if test="gpsSupp != null">
-        #{gpsSupp,jdbcType=VARCHAR},
+        #{gpsSupp},
       </if>
       <if test="vip != null">
-        #{vip,jdbcType=VARCHAR},
+        #{vip},
       </if>
       <if test="gdSuppCode != null">
-        #{gdSuppCode,jdbcType=VARCHAR},
+        #{gdSuppCode},
       </if>
       <if test="gdSupp != null">
-        #{gdSupp,jdbcType=VARCHAR},
+        #{gdSupp},
       </if>
       <if test="sfwyfxqd != null">
-        #{sfwyfxqd,jdbcType=DECIMAL},
+        #{sfwyfxqd},
       </if>
       <if test="isStageDb != null">
-        #{isStageDb,jdbcType=DECIMAL},
+        #{isStageDb},
       </if>
       <if test="insureId != null">
-        #{insureId,jdbcType=DECIMAL},
+        #{insureId},
       </if>
       <if test="warnDay != null">
-        #{warnDay,jdbcType=DECIMAL},
+        #{warnDay},
       </if>
       <if test="gotoType != null">
-        #{gotoType,jdbcType=DECIMAL},
+        #{gotoType},
       </if>
       <if test="ddId != null">
-        #{ddId,jdbcType=VARCHAR},
+        #{ddId},
       </if>
       <if test="supCate != null">
-        #{supCate,jdbcType=VARCHAR},
+        #{supCate},
       </if>
       <if test="isLoansPay != null">
-        #{isLoansPay,jdbcType=DECIMAL},
+        #{isLoansPay},
       </if>
       <if test="companyLeader != null">
-        #{companyLeader,jdbcType=VARCHAR},
+        #{companyLeader},
       </if>
       <if test="contactWay != null">
-        #{contactWay,jdbcType=VARCHAR},
+        #{contactWay},
       </if>
       <if test="mail != null">
-        #{mail,jdbcType=VARCHAR},
+        #{mail},
       </if>
       <if test="companyProv != null">
-        #{companyProv,jdbcType=VARCHAR},
+        #{companyProv},
       </if>
       <if test="companyCity != null">
-        #{companyCity,jdbcType=VARCHAR},
+        #{companyCity},
       </if>
       <if test="companyArea != null">
-        #{companyArea,jdbcType=VARCHAR},
+        #{companyArea},
       </if>
       <if test="companyAddress != null">
-        #{companyAddress,jdbcType=VARCHAR},
+        #{companyAddress},
       </if>
       <if test="accountProp != null">
-        #{accountProp,jdbcType=VARCHAR},
+        #{accountProp},
       </if>
     </trim>
   </insert>

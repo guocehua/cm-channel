@@ -49,7 +49,7 @@ public class FastDFSClient {
         try {
             inputStream = new FileInputStream(file);
         } catch (FileNotFoundException e) {
-            log.error(e.toString(), e);
+//            log.error(e.toString(), e);
         }
         StorePath storePath = storageClient.uploadFile(inputStream, file.length(), FilenameUtils.getExtension(file.getName()), null);
         return getResAccessUrl(storePath);
@@ -109,7 +109,7 @@ public class FastDFSClient {
         try {
             StorePath storePath = StorePath.parseFromUrl("group/" + fileUrl);
         } catch (FdfsUnsupportStorePathException e) {
-            log.warn(e.toString(), e);
+//            log.warn(e.toString(), e);
         }
     }
 
